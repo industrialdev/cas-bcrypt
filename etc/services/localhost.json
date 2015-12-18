@@ -1,0 +1,12 @@
+{
+  "@class": "org.jasig.cas.services.RegexRegisteredService",
+  "serviceId": "^(https|http)://(localhost|docker.dev).*",
+  "name": "Development CAS Access",
+  "id": 314,
+  "description": "allow local development for CAS sever",
+  "accessStrategy": {
+    "@class": "org.jasig.cas.services.DefaultRegisteredServiceAccessStrategy",
+    "enabled": true,
+    "ssoEnabled": true
+  }
+}
